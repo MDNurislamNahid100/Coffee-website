@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .5s;
+    color:#fff;
+}
+body{
+    background:#010103;
+}
+section{
+    padding:2rem 6.5%;
+}
+        /** start header css**/
+.header{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    background:#010103;
+    border-bottom:.1rem solid rgba(255,255,255,.3);
+    border-top:1px solid #d3ad7f;
+    padding:1rem 7%;
+    position:fixed;
+    left:0;right:0;top:0;
+}
+.header .logo img{
+    height:4.5rem;
+}
+.header .navbar a{
+    color:#fff;
+    margin:0 10px;
+    font-size:20px;
+}
+.header .navbar a:hover{
+    color:#d3ad7f;
+    border-bottom:1px solid #d3ad7f;
+    padding-bottom:.5rem;
+}
+
+        /** end header css**/
+
+         /** start home section css**/
+
+.home{
+    min-height:100vh;
+    display:flex;
+    background:url(images/home-img.jpeg) no-repeat;
+    align-items:center;
+    background-size:cover;
+    background-position:center;
+}
+.home .content{
+    max-width:45rem;
+}
+.home .content h1{
+    color:#fff;
+    font-size:4rem;
+    text-transform:uppercase;
+}
+.home .content p{
+    font-size: 1.5rem;
+    font-weight:lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #eee;
+}
+.btn{
+    background:#d3ad7f;
+    font-size:20px;
+    padding: 8px 30px;
+    color:#fff;
+    border:.5px solid #fff;
+    border-radius:10px;
+}
+.btn:hover{
+    letter-spacing:3px;
+}
+
+         /** end home section css**/
+
+         /** start about section css**/
+
+ h2{
+    color:#eee;
+    text-align:center;
+    font-size:45px;
+    text-transform:uppercase;
+    padding:5px 10px 20px 10px;
+}
+.span{
+    text-transform:uppercase;
+    color:#d3ad7f;
+    border-bottom:2px dotted #d3ad7f;
+    padding-bottom:5px;
+}
+.about .row{
+    display:flex;
+    background:#13131a;
+    margin-top:10px;
+    width:100%;
+}
+.img-about{
+    width:120%;
+    padding-right:10px;
+}
+.img-about img{
+    width:100%;
+}
+.about .content h3{
+    font-size:35px;
+    padding:50px 10px 20px 10px;
+    color:#fff;
+}
+.about .content p{
+    padding:5px 10px;
+    color:#ccc;
+    line-height:2;
+    font-size:16px;
+}
+.about .content .btn{
+    margin:10px 0 0 10px;
+}
+
+         /** end about section css**/
+
+         /** start menu section css**/
+
+.box-container{
+    width:100%;
+}
+.box-container .box{
+    display:inline-block;
+    width:31%;
+    height:400px;
+    margin:11.5px;
+    margin-left:10px;
+    border:1px solid rgba(255,255,255,3);
+    text-align: center;
+    border-radius: 5px;
+}
+.box-container .box:hover{
+    background:#ccc;
+    box-shadow:-5px -5px 5px #8E44AD;
+    border-radius:10px;
+}
+.box-container .box:hover > *{
+    color:#13131a;
+}
+.box img {
+    height: 7rem;
+    margin:50px 0 15px 0;
+}
+.box h3{
+    font-size:25px;
+    padding:5px;
+    margin:5px;
+    color:#fff;
+}
+.box .price{
+    font-size:25px;
+    margin-bottom:5px;
+}
+.box .price span{
+    font-size:20px;
+    padding:3px;
+    color:#fff;
+    text-decoration:line-through;
+    font-weight:lighter;
+}
+.box .btn{
+    margin-top:10px;
+}
+
+         /** end menu section css**/
+
+         /** start products section css**/
+
+.products-content{
+    width:100%;
+}
+.box-products{
+    width:31%;
+    height:600px;
+    display:inline-block;
+    border:1px solid #d3ad7f;
+    text-align:center;
+    margin:30px 11px 15px 10px;
+    border-radius:10px;
+    box-shadow:1px 1px 5px #d3ad7f;
+}
+.box-products .icons a{
+    width:50px;
+    height:50px;
+    padding:0;
+    line-height:50px;
+    font-size:25px;
+    margin:20px 10px;
+    border:1px solid #d3ad7f;
+    border-radius:5px;
+}
+.box-products .icons a:hover{
+    background:#eee;
+    color:#d3ad7f;
+    border-radius:10px;
+    font-size:30px;
+}
+.products-img img{
+    height:300px;
+    margin:20px;
+}
+.product-list h3{
+    font-size:30px;
+    color:#ccc;
+    padding:5px;
+}
+.product-list .fas{
+    font-size:20px;
+    color:#d3ad7f;
+    padding:8px 1px;
+    margin-bottom:12px;
+}
+.product-list .price{
+    font-size:30px;
+    padding:5px;
+}
+.product-list .price span{
+    font-size:18px;
+    text-decoration:line-through;
+    font-weight:lighter;
+}
+
+
+         /** end products section css**/
+
+         /** start review section css**/
+
+.review-content{
+    width:31%;
+    height:530px;
+    display:inline-block;
+    border:1px solid #ccc;
+    text-align:center;
+    margin:30px 11px 15px 10px;
+    border-radius:10px;
+    box-shadow:1px 1px 5px #d3ad7f;
+}
+.review-content:hover{
+    background:#eee;
+    box-shadow:2px 2px 5px #8E44AD;
+}
+.review-content:hover > .review-letter >p{
+    color:#13131a;
+    font-weight:bold;
+}
+.review-content:hover>.john-deo>h3{
+    color:#13131a;
+    font-weight:bolder;
+}
+.review-content:hover>.john-deo>img{
+    box-shadow:-5px 5px 5px#13131a;
+}
+.quatesion img{
+    margin-top: 40px ;
+    margin-bottom:8px;
+    width:70px;
+
+}
+.review-letter{
+    padding:5px;
+    margin: 10px;
+    margin-top:0;
+}
+.review-letter p{
+    font-size:16px;
+    color:#ccc;
+    line-height:1.8;
+    padding:10px;
+    text-align:inherit;
+}
+.john-deo img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    box-shadow:1px 2px 5px #fff;
+    margin-bottom:10px;
+}
+.john-deo h3{
+    font-size:28px;
+    color:#ccc;
+    margin:5px;
+}
+.john-deo .fas{
+    color:#d3ad7f;
+    font-size:20px;
+    margin-top:5px;
+}
+
+         /** end review section css**/
+
+         /** start contact section css**/
+
+.contact-box{
+    background:#13131a;
+    width:100%;
+   display:flex;
+}
+
+.contact-box-items{
+    width:600px;
+    height:450px;
+    text-align: center;
+}
+.contact-box-items .btn{
+    margin-top:30px;
+}
+.contact-box-items h3{
+    font-size:40px;
+    margin:50px;
+    color:#ccc;
+    text-transform: uppercase;
+}
+.inputbox{
+    width:100%;
+    text-align:left;
+    display:flex;
+}
+.inputbox .fas{
+    font-size:25px;
+    width:50px;
+    background-color:#d3ad7f;
+    color:#010103;
+    text-align:center;
+    padding:10px;
+    margin:10px 0 10px 30px;
+}
+.inputbox input{
+    margin-top:10px;
+    margin-right:30px;
+    color:#000;
+    background-color:#fff;
+    height:41px;
+    width:100%;
+    padding-left:10px;
+}
+.inputbox input:focus{
+    border:2px solid #d3ad7f;
+    outline:none;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+         /** end contact section css**/
+
+         /** start blogs section css**/
+
+.blog-items{
+    width:31%;
+    height:530px;
+    display:inline-block;
+    border:1px solid #ccc;
+    margin:30px 11px 0 10px;
+    border-radius:10px;
+    box-shadow:1px 1px 5px #d3ad7f;
+}
+.blog-items .image{
+    width:100%;
+    height:250px;
+    overflow:hidden;
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+}
+.blog-items .image img{
+    height:100%;
+    width:100%;
+}
+.blog-items:hover> .image>img{
+    transform: scale(1.2);
+}
+.blog-items h3{
+    margin:10px 5px 5px 20px;
+    font-size:25px;
+    color:#fff;
+    line-height:45px;
+}
+.blog-items h3:hover{
+    color:#d3ad7f;
+}
+.blog-items h4{
+    margin:5px 5px 5px 20px;
+    color:#d3ad7f;
+    font-size:20px;
+}
+.blog-items p{
+    color:#ccc;
+    font-size:17px;
+    line-height:30px;
+    margin:10px 0 20px 20px;
+}
+.blog-items .btn{
+    margin-left:20px;
+}
+
+         /** end blogs section css**/
+
+         /** start footer section css**/
+
+.footer{
+    width:100%;
+    height:150px;
+    background:#13131a;
+}
+.footer .footer-social-icon{
+    text-align:center;
+    padding-top:30px;
+}
+.footer .footer-social-icon .fab{
+    width:50px;
+    height:50px;
+    line-height:50px;
+    font-size:20px;
+    border:1px solid #d3ad7f;
+    border-radius:50%;
+    margin: 5px 5px 10px 5px;
+    color:#eee;
+}
+.footer .footer-social-icon .fab:hover{
+    background:#d3ad7f;
+    color:#13131a;
+    cursor:pointer;
+}
+.footer h2{
+    font-size:20px;
+    text-transform: capitalize;
+    margin-top:5px;
+    font-weight:lighter;
+}
+.footer .span{
+    border:none;
+}
+
+         /** end footer section css**/
